@@ -1,0 +1,371 @@
+@mixin fontS ($font,$family) {
+	font-size: $font;
+	font-family: $family;
+}
+
+@mixin size ($height,$width) {
+	height:$height;
+	width:$width;
+}
+
+//In here is Header, Hobbies, Resume, Footer Mobile Layout
+
+//Header Layout
+@media screen and (max-width: 768px) {
+	#clock {
+		display: none;
+	}
+	nav {
+		height: auto;
+		ul {
+			width: 100%;
+			display: block;
+			height: auto;
+		}
+		li {
+			width: 50%;
+			float: left;
+			position: relative;
+		}
+		li a {
+			border-bottom: 1px solid #7073A0;
+			border-right:  1px solid #7073A0;
+		}
+		li:last-child a {
+			border-right:  1px solid #7073A0;
+		}
+		a {
+			text-align: center;
+			width: 100%;
+			text-indent: 25px;
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#clock {
+		display: none;
+	}
+	nav {
+		height: auto;
+		ul {
+			width: 100%;
+			display: block;
+			height: auto;
+		}
+		li {
+			width: 50%;
+			float: left;
+			position: relative;
+		}
+		li a {
+			border-bottom: 1px solid #7073A0;
+			border-right:  1px solid #7073A0;
+		}
+		li:last-child a {
+			border-right:  1px solid #7073A0;
+		}
+		a {
+			text-align: center;
+			width: 100%;
+			text-indent: 25px;
+		}
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	nav {
+		border-bottom: 0;
+		ul {
+			display: none;
+			height: auto;
+		}
+		a.pull {
+			display: block;
+			background: url('../images/vball.png') no-repeat;
+			background-size: contain;
+			background-color: #292835;
+			color: white;
+			width: 100%;
+			position: relative;
+			text-decoration: none;
+			&:hover {
+				color: #8E93AE;
+			}
+
+		}
+		a.pull:after {
+			border-top: .5em double white;
+			border-bottom: .145em solid white;
+			content: ' ';
+			display: inline-block;
+			@include size (.85em, 1em);
+			position: absolute;
+			right: 15px;
+			top: 13px;
+		}
+	}
+}
+
+@media only screen and (max-width: 320px) {
+
+	nav li {
+		display: block;
+		float: none;
+		width: 100%;
+		a {
+			border-bottom: 1px solid #7073A0;
+		}
+	}
+}
+
+
+//Hobbies Layout
+@media screen and (max-width: 768px){
+	.left h2 {
+		padding-bottom: 5px;
+	}
+	.right h2 {
+		padding-bottom: 5px;
+	}
+} 
+
+@media screen and (max-width: 480px){
+	.left {
+		h2 {
+			font-size: 28px;
+		}
+		p {
+			@include fontS(16px, sans-serif);
+		}
+		.btn {
+			display: block;
+		}
+		iframe {
+			width: 100%;
+			margin-top: 39px;
+		}
+
+	}
+	.vball p {
+		width: 200%;
+	}
+	.right {
+		h2 {
+			font-size: 28px;
+			padding-bottom: 5px;
+		}
+		p {
+			@include fontS(16px, sans-serif);
+		}
+		iframe {
+			display: none;
+		}
+		img {
+			padding-top: 90px;
+		}
+	}
+}
+
+@media screen and (max-width: 375px){
+	.left {
+		h2 {
+			font-size: 28px;
+		}
+		p {
+		
+			@include fontS(14px, sans-serif);
+		}
+	}
+	.soc1 {
+		h2 {
+			padding-bottom: 10px;
+			margin-left: -162px;
+		}
+		p {
+			margin-left: -162px;
+			padding-top: 200px;
+			width: 175%;
+		}
+		img {
+			padding-top: 90px;
+			margin-right: -134px;
+			margin-top: -50px;
+			width: 200%;
+		}
+	}
+	.right {
+		h2 {
+			font-size: 28px;
+		}
+		p {
+			@include fontS(16px, sans-serif);
+		}
+		iframe {
+			display: none;
+		}
+	}
+	.tennis {
+		p {
+			margin-top: 185px;
+			width: 200%;
+		}
+		img {
+			margin-left: -162px;
+			margin-top: -50px;
+			width: 200%;
+		}
+	}
+	.moto {
+		@extend .soc1;
+	}
+}
+
+@media only screen and (max-width: 320px){
+	.left {
+		h2 {
+			font-size: 28px;
+		}
+		p {
+		
+			@include fontS(14px, sans-serif);
+		}
+	}
+	.soccer {
+		h2 {
+			padding-bottom: 10px;
+			margin-left: -135px;
+		}
+		p {
+			margin-left: -135px;
+			padding-top: 170px;
+			width: 175%;
+		}
+		img {
+			padding-top: 90px;
+			margin-right: -134px;
+			margin-top: -50px;
+			width: 200%;
+		}
+	}
+	.right {
+		h2 {
+			font-size: 28px;
+		}
+		p {
+			@include fontS(16px, sans-serif);
+		}
+		iframe {
+			display: none;
+		}
+	}
+	.tennis {
+		p {
+			margin-top: 150px;
+			width: 200%;
+		}
+		img {
+			margin-left: -134px;
+			margin-top: -50px;
+			width: 200%;
+		}
+	}
+	.moto {
+		@extend .soccer;
+	}
+}
+
+//Resume 
+@media only screen and (max-width: 768px){
+	.info {
+		li {
+		font-size: 17px;
+		margin-left: 0px;
+		}
+		.title {
+			margin-left: 10px;
+		}
+	}
+	div {
+		.ed {
+			margin-left: 50px;
+			padding: 0px;
+			width: 75%;
+		}
+		.school {
+			margin-left: 25px;
+		}
+		.date {
+			float: right;
+			font-weight: bold;
+		}
+	}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+	.info {
+		li {
+		font-size: 15px;
+		margin-left: 0px;
+		}
+		.title {
+			margin-left: 10px;
+		}
+	}
+	div {
+		.ed {
+			margin-left: 50px;
+			padding: 0px;
+			width: 75%;
+		}
+		.school {
+			margin-left: 25px;
+		}
+		.date {
+			float: right;
+			font-weight: bold;
+		}
+	}
+}	
+
+//Footer 
+@media screen and (max-width: 768px){
+	.footer-wrapper {
+		margin-top: 10px;
+		height: auto;
+	}
+	.footer-left {
+		padding: 0px;
+		li {
+			padding-right: 15px;
+		}
+	}
+	.footer-right {
+		.fa-2x {
+			display: none;
+		}
+	}
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+	.footer-left {
+		padding: 0px;
+		li {
+			font-size: 13px;
+			padding-right: 15px;
+			padding-top: 0px;
+		}
+		ul {
+			padding-top: 10px;
+		}
+	}
+		.footer-right{
+			.fa-3x {
+				display: none;
+			}
+			.fa-2x {
+				display: inline-block;
+				padding-top: 7px;
+			}
+		}
+}

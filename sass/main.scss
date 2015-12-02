@@ -8,7 +8,10 @@
 	font-family: $family;
 }
 
-//index winter
+//Part body of index page, Bio and Hobbies and Resume
+
+//carousel in a carousel partial scss
+//front page winter
 .winter img, .star img	{
 	width: 100%;
 	padding: 10px; 
@@ -18,6 +21,7 @@
 .container {
 	height: 100%;
 }
+
 
 //Bio
 .one {
@@ -101,147 +105,34 @@
 	}
 }
 
-@media screen and (max-width: 480px){
-	.left {
-		h2 {
-			font-size: 28px;
+//Resume page
+	.resume {
+		background: #E2E2E2;
+		color: #070707;
+	}
+	.title {
+		margin-left: 25px;
+	}
+	.info {
+		li {
+		font-size: 17px;
+		margin-left: 50px;
 		}
-		p {
-			@include fontS(16px, sans-serif);
+	}
+	div {
+		.ed {
+			margin-left: 100px;
+			padding: 0px;
+			width: 75%;
 		}
-		.btn {
-			display: block;
+		.school {
+			margin-left: 50px;
 		}
-		iframe {
-			width: 100%;
-			margin-top: 39px;
+		.date {
+			float: right;
+			font-weight: bold;
 		}
+	}
 
-	}
-	.vball p {
-		width: 200%;
-	}
-	.right {
-		h2 {
-			font-size: 28px;
-			padding-bottom: 5px;
-		}
-		p {
-			@include fontS(16px, sans-serif);
-		}
-		iframe {
-			display: none;
-		}
-		img {
-			padding-top: 90px;
-		}
-	}
-}
 
-@media screen and (max-width: 375px){
-	.left {
-		h2 {
-			font-size: 28px;
-		}
-		p {
-		
-			@include fontS(14px, sans-serif);
-		}
-	}
-	.soc1 {
-		h2 {
-			padding-bottom: 10px;
-			margin-left: -162px;
-		}
-		p {
-			margin-left: -162px;
-			padding-top: 200px;
-			width: 175%;
-		}
-		img {
-			padding-top: 90px;
-			margin-right: -134px;
-			margin-top: -50px;
-			width: 200%;
-		}
-	}
-	.right {
-		h2 {
-			font-size: 28px;
-		}
-		p {
-			@include fontS(16px, sans-serif);
-		}
-		iframe {
-			display: none;
-		}
-	}
-	.tennis {
-		p {
-			margin-top: 185px;
-			width: 200%;
-		}
-		img {
-			margin-left: -162px;
-			margin-top: -50px;
-			width: 200%;
-		}
-	}
-	.moto {
-		@extend .soc1;
-	}
-}
-
-@media only screen and (max-width: 320px){
-	.left {
-		h2 {
-			font-size: 28px;
-		}
-		p {
-		
-			@include fontS(14px, sans-serif);
-		}
-	}
-	.soccer {
-		h2 {
-			padding-bottom: 10px;
-			margin-left: -135px;
-		}
-		p {
-			margin-left: -135px;
-			padding-top: 170px;
-			width: 175%;
-		}
-		img {
-			padding-top: 90px;
-			margin-right: -134px;
-			margin-top: -50px;
-			width: 200%;
-		}
-	}
-	.right {
-		h2 {
-			font-size: 28px;
-		}
-		p {
-			@include fontS(16px, sans-serif);
-		}
-		iframe {
-			display: none;
-		}
-	}
-	.tennis {
-		p {
-			margin-top: 150px;
-			width: 200%;
-		}
-		img {
-			margin-left: -134px;
-			margin-top: -50px;
-			width: 200%;
-		}
-	}
-	.moto {
-		@extend .soccer;
-	}
-}
+@import 'mobile';

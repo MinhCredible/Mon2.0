@@ -93,6 +93,11 @@ section {
 	}
 }
 
+@media screen and (max-width: 768px) {
+	section {
+		height: 275px;
+	}
+}
 
 
 @media screen and (max-width: 600px){

@@ -1,0 +1,121 @@
+@media screen and (max-width: 480px) {
+  .left h2 {
+    font-size: 28px;
+  }
+  .left p {
+    font-size: 16px;
+    font-family: sans-serif;
+  }
+  .left .btn {
+    display: block;
+  }
+  .left iframe {
+    width: 100%;
+    margin-top: 39px;
+  }
+  .vball p {
+    width: 200%;
+  }
+  .right h2 {
+    font-size: 28px;
+    padding-bottom: 5px;
+  }
+  .right p {
+    font-size: 16px;
+    font-family: sans-serif;
+  }
+  .right iframe {
+    display: none;
+  }
+  .right img {
+    padding-top: 90px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .left h2 {
+    font-size: 28px;
+  }
+  .left p {
+    font-size: 14px;
+    font-family: sans-serif;
+  }
+  .soc1 h2, .moto h2 {
+    padding-bottom: 10px;
+    margin-left: -162px;
+  }
+  .soc1 p, .moto p {
+    margin-left: -162px;
+    padding-top: 200px;
+    width: 175%;
+  }
+  .soc1 img, .moto img {
+    padding-top: 90px;
+    margin-right: -134px;
+    margin-top: -50px;
+    width: 200%;
+  }
+  .right h2 {
+    font-size: 28px;
+  }
+  .right p {
+    font-size: 16px;
+    font-family: sans-serif;
+  }
+  .right iframe {
+    display: none;
+  }
+  .tennis p {
+    margin-top: 185px;
+    width: 200%;
+  }
+  .tennis img {
+    margin-left: -162px;
+    margin-top: -50px;
+    width: 200%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .left h2 {
+    font-size: 28px;
+  }
+  .left p {
+    font-size: 14px;
+    font-family: sans-serif;
+  }
+  .soccer h2, .moto h2 {
+    padding-bottom: 10px;
+    margin-left: -135px;
+  }
+  .soccer p, .moto p {
+    margin-left: -135px;
+    padding-top: 170px;
+    width: 175%;
+  }
+  .soccer img, .moto img {
+    padding-top: 90px;
+    margin-right: -134px;
+    margin-top: -50px;
+    width: 200%;
+  }
+  .right h2 {
+    font-size: 28px;
+  }
+  .right p {
+    font-size: 16px;
+    font-family: sans-serif;
+  }
+  .right iframe {
+    display: none;
+  }
+  .tennis p {
+    margin-top: 150px;
+    width: 200%;
+  }
+  .tennis img {
+    margin-left: -134px;
+    margin-top: -50px;
+    width: 200%;
+  }
+}

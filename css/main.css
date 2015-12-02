@@ -82,82 +82,6 @@ nav a.pull {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
-  #clock {
-    display: none;
-  }
-  nav {
-    height: auto;
-  }
-  nav ul {
-    width: 100%;
-    display: block;
-    height: auto;
-  }
-  nav li {
-    width: 50%;
-    float: left;
-    position: relative;
-  }
-  nav li a {
-    border-bottom: 1px solid #7073A0;
-    border-right: 1px solid #7073A0;
-  }
-  nav li:last-child a {
-    border-right: 1px solid #7073A0;
-  }
-  nav a {
-    text-align: center;
-    width: 100%;
-    text-indent: 25px;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  nav {
-    border-bottom: 0;
-  }
-  nav ul {
-    display: none;
-    height: auto;
-  }
-  nav a.pull {
-    display: block;
-    background: url("../images/vball.png") no-repeat;
-    background-size: contain;
-    background-color: #292835;
-    color: white;
-    width: 100%;
-    position: relative;
-    text-decoration: none;
-  }
-  nav a.pull:hover {
-    color: #8E93AE;
-  }
-  nav a.pull:after {
-    border-top: .5em double white;
-    border-bottom: .145em solid white;
-    content: ' ';
-    display: inline-block;
-    height: 0.85em;
-    width: 1em;
-    position: absolute;
-    right: 15px;
-    top: 13px;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  nav li {
-    display: block;
-    float: none;
-    width: 100%;
-  }
-  nav li a {
-    border-bottom: 1px solid #7073A0;
-  }
-}
-
 section {
   font-size: 16px;
   position: relative;
@@ -247,6 +171,12 @@ section {
 
 .slider-dot :hover {
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    height: 275px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -478,6 +408,10 @@ section {
   padding-top: 8px;
 }
 
+.footer-right .fa-2x {
+  display: none;
+}
+
 .winter img, .star img {
   width: 100%;
   padding: 10px;
@@ -588,6 +522,151 @@ section {
 .right p {
   font-size: 25px;
   font-family: sans-serif;
+}
+
+.resume {
+  background: #E2E2E2;
+  color: #070707;
+}
+
+.title {
+  margin-left: 25px;
+}
+
+.info li {
+  font-size: 17px;
+  margin-left: 50px;
+}
+
+div .ed {
+  margin-left: 100px;
+  padding: 0px;
+  width: 75%;
+}
+
+div .school {
+  margin-left: 50px;
+}
+
+div .date {
+  float: right;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  #clock {
+    display: none;
+  }
+  nav {
+    height: auto;
+  }
+  nav ul {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+  nav li {
+    width: 50%;
+    float: left;
+    position: relative;
+  }
+  nav li a {
+    border-bottom: 1px solid #7073A0;
+    border-right: 1px solid #7073A0;
+  }
+  nav li:last-child a {
+    border-right: 1px solid #7073A0;
+  }
+  nav a {
+    text-align: center;
+    width: 100%;
+    text-indent: 25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #clock {
+    display: none;
+  }
+  nav {
+    height: auto;
+  }
+  nav ul {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+  nav li {
+    width: 50%;
+    float: left;
+    position: relative;
+  }
+  nav li a {
+    border-bottom: 1px solid #7073A0;
+    border-right: 1px solid #7073A0;
+  }
+  nav li:last-child a {
+    border-right: 1px solid #7073A0;
+  }
+  nav a {
+    text-align: center;
+    width: 100%;
+    text-indent: 25px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  nav {
+    border-bottom: 0;
+  }
+  nav ul {
+    display: none;
+    height: auto;
+  }
+  nav a.pull {
+    display: block;
+    background: url("../images/vball.png") no-repeat;
+    background-size: contain;
+    background-color: #292835;
+    color: white;
+    width: 100%;
+    position: relative;
+    text-decoration: none;
+  }
+  nav a.pull:hover {
+    color: #8E93AE;
+  }
+  nav a.pull:after {
+    border-top: .5em double white;
+    border-bottom: .145em solid white;
+    content: ' ';
+    display: inline-block;
+    height: 0.85em;
+    width: 1em;
+    position: absolute;
+    right: 15px;
+    top: 13px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  nav li {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+  nav li a {
+    border-bottom: 1px solid #7073A0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .left h2 {
+    padding-bottom: 5px;
+  }
+  .right h2 {
+    padding-bottom: 5px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -709,5 +788,86 @@ section {
     margin-left: -134px;
     margin-top: -50px;
     width: 200%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .info li {
+    font-size: 17px;
+    margin-left: 0px;
+  }
+  .info .title {
+    margin-left: 10px;
+  }
+  div .ed {
+    margin-left: 50px;
+    padding: 0px;
+    width: 75%;
+  }
+  div .school {
+    margin-left: 25px;
+  }
+  div .date {
+    float: right;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .info li {
+    font-size: 15px;
+    margin-left: 0px;
+  }
+  .info .title {
+    margin-left: 10px;
+  }
+  div .ed {
+    margin-left: 50px;
+    padding: 0px;
+    width: 75%;
+  }
+  div .school {
+    margin-left: 25px;
+  }
+  div .date {
+    float: right;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-wrapper {
+    margin-top: 10px;
+    height: auto;
+  }
+  .footer-left {
+    padding: 0px;
+  }
+  .footer-left li {
+    padding-right: 15px;
+  }
+  .footer-right .fa-2x {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .footer-left {
+    padding: 0px;
+  }
+  .footer-left li {
+    font-size: 13px;
+    padding-right: 15px;
+    padding-top: 0px;
+  }
+  .footer-left ul {
+    padding-top: 10px;
+  }
+  .footer-right .fa-3x {
+    display: none;
+  }
+  .footer-right .fa-2x {
+    display: inline-block;
+    padding-top: 7px;
   }
 }
