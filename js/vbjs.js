@@ -120,6 +120,15 @@ var main = function(){
 
 $(document).ready(main);
 
+/*
+function mode() {
+$('.btn').click(function (){
+	$('.modal').on('shown.bs.modal', function() {
+		$(this).find('iframe').attr('src', 'https://www.youtube.com/embed/1gPXUA0L2mU')
+	});
+}
+};
+mode();*/
 
 
 //resume page click toggle
