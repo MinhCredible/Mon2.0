@@ -1,0 +1,100 @@
+
+@import "header";
+@import  "carousel";
+@import "footer";
+
+@mixin fontS ($font) {
+	font-size: $font;
+	font-family: sans-serif;
+}
+
+//index winter
+.winter img, .star img	{
+	width: 100%;
+	padding: 10px; 
+	height: 100%;
+}
+
+.container {
+	height: 100%;
+}
+/*
+//hobbies
+.backG {
+	background: #E3DFDF;
+	h2 {
+		@include fontS (50px);
+		margin-top: 10px;
+	}
+} */
+/*
+.left-wrapper {
+	float: left;
+	width: 48%;
+	p {
+		@include fontS (25px);
+		margin-top: 20px;
+	}
+	img {
+		padding-top: 100px;
+		padding-left: 0px;
+		width: 100%;
+	}
+	h2 {
+		padding-top: 10px;
+	}
+	.ten {
+		padding-top: 30px;
+	}
+}
+
+.right-wrapper {
+	float: right;
+	width: 48%;
+	iframe {
+		margin-top: 20px;
+		margin-bottom: 20px; 
+		width: 100%;
+	}
+	p {
+		@include fontS (25px);
+		margin-top: 50px;
+	}
+	img {
+		padding-top: 175px;
+		width: 100%;
+	}
+}
+*/
+
+.first{
+	background: #CAA7A7;
+}
+
+.two {
+	background: #A6A6AC;
+}
+.left {
+	float: left;
+	width: 48%;
+	p {
+		width: 100%;
+	}
+	img {
+		width: 100%;
+	}
+}
+.right {
+	float: right;
+	width: 48%;
+	p {
+		width: 100%;
+	}
+		iframe {
+		padding-top: 20px;
+		width: 100%;
+	}
+	img {
+		width: 100%;
+	}
+}

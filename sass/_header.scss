@@ -1,0 +1,167 @@
+
+$black:#0A0A0A;
+$skyblue:#20D2E7;
+$lightGrey: #8C99A4;
+@mixin size ($height,$width) {
+	height:$height;
+	width:$width;
+}
+
+@mixin media($width){
+	@media screen and (max-width: $width) {
+		@content;
+	}
+}
+
+
+.clearfix:before,
+.clearfix:after {
+	content: ' ';
+	display: table;
+}
+.clearfix:after {
+	clear:both;
+}
+.clearfix {
+	zoom:1;
+}
+
+#clock {
+	border-bottom: 1px solid $black;
+	background: #494F6D;
+	color: #101EA0;
+	font-size: 20px;
+	float: left;
+	height: 40px;
+	padding-top: 5px;
+	padding-left: 10px;
+	position: relative;
+	width:  130px;
+	z-index: 1;
+}
+
+nav {
+	background: #494F6D;
+	border-bottom: 1px solid $black;
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-weight: bold;
+	position: relative;
+	@include size (40px,100%);
+		ul {
+			@include size (40px,600px);
+			margin: 0 auto;
+			padding: 0;
+			display: block;
+			background: url('../images/vball.png') no-repeat;
+			background-size: contain;
+		}
+		li {
+			display: inline;
+			float: left;
+		}
+		a{
+			color:#F9F4F4;
+			display:inline-block;
+			line-height: 40px;
+			text-align: center;
+			text-decoration: none;
+			text-shadow: 1px 1px 0px #38393E;
+			width: 150px;
+		}
+		li a {
+			border-right: 1px solid #515676;
+			border-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+		}
+		li:last-child a {
+			border-right: 0;
+		}
+		a:hover, a:active {
+			color: white;
+			background-color: $lightGrey;
+			text-decoration: none;
+
+		}
+		a.pull {
+			display: none;
+		}
+
+}
+
+@media screen and (max-width: 600px) {
+	#clock {
+		display: none;
+	}
+	nav {
+		height: auto;
+		ul {
+			width: 100%;
+			display: block;
+			height: auto;
+		}
+		li {
+			width: 50%;
+			float: left;
+			position: relative;
+		}
+		li a {
+			border-bottom: 1px solid #7073A0;
+			border-right:  1px solid #7073A0;
+		}
+		li:last-child a {
+			border-right:  1px solid #7073A0;
+		}
+		a {
+			text-align: center;
+			width: 100%;
+			text-indent: 25px;
+		}
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	nav {
+		border-bottom: 0;
+		ul {
+			display: none;
+			height: auto;
+		}
+		a.pull {
+			display: block;
+			background: url('../images/vball.png') no-repeat;
+			background-size: contain;
+			background-color: #292835;
+			color: white;
+			width: 100%;
+			position: relative;
+			text-decoration: none;
+			&:hover {
+				color: #8E93AE;
+			}
+
+		}
+		a.pull:after {
+			border-top: .5em double white;
+			border-bottom: .145em solid white;
+			content: ' ';
+			display: inline-block;
+			@include size (.85em, 1em);
+			position: absolute;
+			right: 15px;
+			top: 13px;
+		}
+	}
+}
+
+@media only screen and (max-width: 320px) {
+
+	nav li {
+		display: block;
+		float: none;
+		width: 100%;
+		a {
+			border-bottom: 1px solid #7073A0;
+		}
+	}
+}
