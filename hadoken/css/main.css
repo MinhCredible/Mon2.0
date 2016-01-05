@@ -1,0 +1,36 @@
+body {
+	background: url('../img/SF4Temple.jpg') no-repeat;
+}
+
+ p {
+	font-size: 25px;
+	color: white;
+	margin-right: 150px;
+}
+
+.ryu {
+	margin-top: 450px;
+}
+
+.ryu:hover {
+	cursor: pointer;
+}
+
+.hadouken {
+	margin-bottom: 125px;
+	margin-left: -100px;
+	padding-right: 50px;
+}
+
+.cool img {
+	height: 60%;
+	margin-top: -29%;
+	margin-left: -11%;
+	width: 45%;
+		position: absolute;
+
+}
+
+.cool {
+visibility: hidden;	
+}

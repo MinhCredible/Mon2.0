@@ -120,6 +120,15 @@ var main = function(){
 
 $(document).ready(main);
 
+/*
+function mode() {
+$('.btn').click(function (){
+	$('.modal').on('shown.bs.modal', function() {
+		$(this).find('iframe').attr('src', 'https://www.youtube.com/embed/1gPXUA0L2mU')
+	});
+}
+};
+mode();*/
 
 
 //resume page click toggle
@@ -133,3 +142,22 @@ function resume(){
 };
 
 resume();
+
+$(document).ready(function(){
+	$('.top').click(function(e){
+		e.preventDefault();
+		$('html, body').animate({
+			scrollTop: 0
+		}, 1000);
+	})
+})
+
+
+var animate = function () {
+
+TweenLite.from('.star', 1, {opacity:0, scale:0});
+TweenLite.to('.bod', 5, {x:900, rotation: -20,});
+
+};
+
+animate();
