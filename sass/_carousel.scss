@@ -9,7 +9,7 @@
 section {
 	font-size: 16px;
 	position: relative;
-	@include size (750px, 100%);
+	@include size (100, 100%);
 }
 
 
@@ -34,7 +34,7 @@ section {
 //slider navigation
 .slider-nav {
 	margin: 10px;
-	padding-top: 10px;
+	padding-top: 40%;
 	text-align: center;
 }
 
@@ -76,33 +76,7 @@ section {
 		display: none;
 		width: 100%;
 	}
-	.fire {
-		display: block;
-		height: auto;
-		h1{
-		font-size: 50px;
-		color: #948282;
-		text-align: center;
-		font-family: sans-serif;
-		margin-top: 2px;
-		@include size (40px, 100%)
-		}
-		p {
-			color: #948282;
-			font-family: sans-serif;
-			font-size: 22px;
-			margin-left: 60px;
-			margin-top: -5px;
-			@include size (30px, 75%);
-		}
-		iframe {
-			margin-left: 80px;
-			margin-top: 50px;
-			@include size (190px, 75%);
-		}
-	}
 	.slider-nav {;
-	margin-top: 40%;
 	text-align: center;
 	}
 
@@ -143,7 +117,7 @@ section {
 @media screen and (max-width: 800px) {
 section {
 		width: 100%;
-		height: 350px;
+		height: 100%;
 	}
 	.top {
 		display: none;
@@ -152,8 +126,8 @@ section {
 		display: none;
 		width: 100%;
 	}
-	.slider-nav {;
-	padding-top: 0%;
+	.slider-nav {
+	padding-top: 40%;
 	text-align: center;
 	}
 
@@ -195,7 +169,7 @@ section {
 @media screen and (max-width: 600px){
 	section {
 		width: 100%;
-		height: 225px;
+		height: 100%;
 	}
 	.desktop {
 		display: none;
@@ -205,7 +179,7 @@ section {
 		width: 100%;
 	}
 	.slider-nav {;
-	padding-top: 10px;
+	padding-top: 40%;
 	text-align: center;
 	}
 
@@ -247,11 +221,11 @@ section {
 @media only screen and (max-width: 480px){
 	section {
 		width: 100%;
-		height: 190px;
+		height: 100%;
 	}
 
 	.slider-nav {;
-	padding-top: 0px;
+	
 	text-align: center;
 	}
 
@@ -284,10 +258,10 @@ section {
 
 	section {
 		width: 100%;
-		height: 125px;
+		height: 100%;
 	}
 	.slider-nav {;
-	padding-top: 25px;
+	
 	text-align: center;
 	}
 

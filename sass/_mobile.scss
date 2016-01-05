@@ -119,6 +119,44 @@
 	}
 }
 
+//Index page except carousel
+@media screen and (min-width: 900px) and (max-width: 1360px){
+	.winter img {
+		height: 400px;
+		margin-left: 25px;
+		width: 30%;
+
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.winter img {
+		height: 350px;
+		margin-left: 20px;
+		width: 29%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.winter img {
+		height: 300px;
+		margin-left: 20px;
+		width: 29%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.star {
+		display: block;
+	}
+	.winter img {
+		height: 175px;
+		margin-left: 20%;
+		padding-top: 5px;
+		width: 65%;
+	}
+}
+
 
 //Hobbies Layout
 @media screen and (max-width: 768px){

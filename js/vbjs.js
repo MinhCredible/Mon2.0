@@ -154,9 +154,16 @@ $(document).ready(function(){
 
 
 var animate = function () {
-
+//index
 TweenLite.from('.star', 1, {opacity:0, scale:0});
-TweenLite.to('.bod', 5, {x:900, rotation: -20,});
+TweenLite.to('.bod', 5, {x:1920, rotation: -20,});
+
+//bio
+TweenLite.from('.about img', 1, {opacity:0, scale:0, rotation:-360, y:750})
+
+//hobies
+TweenLite.from(".vball iframe, .tennis img", 1, {x:200})
+TweenLite.from(".soccer img, .moto img", 1, {x:-200})
 
 };
 
